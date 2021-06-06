@@ -331,3 +331,13 @@ if (revision.major <= 3 && revision.minor <= 5) {
     }
 
 }
+
+
+/** method-trace-plugin  */
+apply plugin: 'bytex.method_trace'
+MethodTracePlugin {
+    enable true
+    enableInDebug true
+    traceList = ['com/ss/android/ugc/bytex/example']
+}
+/** method-trace-plugin  */
